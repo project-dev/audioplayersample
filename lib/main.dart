@@ -122,7 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     alignment: Alignment.center,
                     child: const Text(
                       'audioplayers',
-                      style: TextStyle(fontSize: 64, color: Colors.white),
+                      style: TextStyle(fontSize: 32, color: Colors.white),
                     ),
                   ),
                   Row(
@@ -133,11 +133,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           onPressed: !_isInitialize ? null :  (){
                             _audioPlayer.play(_audioPlayerSourceMap[value]!);
                           },
-                          icon: const Icon(Icons.play_circle, size: 24),
+                          icon: const Icon(Icons.play_circle, size: 18),
                           label: Text(
                               value,
-                              style: const TextStyle(fontSize: 24)
+                              style: const TextStyle(fontSize: 18),
                           ),
+
                         ),
                       },
                     ]
@@ -146,10 +147,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: !_isInitialize ? null :  (){
                         _audioPlayer.stop();
                       },
-                      icon: const Icon(Icons.stop_circle, size: 24),
+                      icon: const Icon(Icons.stop_circle, size: 18),
                       label: const Text(
                           'Stop',
-                          style: TextStyle(fontSize: 24)
+                          style: TextStyle(fontSize: 18)
                       )
                   ),
                 ],
@@ -166,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     alignment: Alignment.center,
                     child: const Text(
                       'just_audio',
-                      style: TextStyle(fontSize: 64, color: Colors.white),
+                      style: TextStyle(fontSize: 32, color: Colors.white),
                     ),
                   ),
                   Row(
@@ -191,10 +192,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                 });
                               }
                             },
-                            icon: const Icon(Icons.play_circle, size: 24),
+                            icon: const Icon(Icons.play_circle, size: 18),
                             label: Text(
                                 value,
-                                style: const TextStyle(fontSize: 24)
+                                style: const TextStyle(fontSize: 18)
                             )
                         ),
                       },
@@ -204,10 +205,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: !_isInitialize ? null :  (){
                         _justAudioPlayer.stop();
                       },
-                      icon: const Icon(Icons.stop_circle, size: 24),
+                      icon: const Icon(Icons.stop_circle, size: 18),
                       label: const Text(
                           'Stop',
-                          style: TextStyle(fontSize: 24)
+                          style: TextStyle(fontSize: 18)
                       )
                   ),
                 ]
